@@ -1,72 +1,35 @@
-# Turn-Based Deckbuilder Prototype (Unity)
+# Unity Roguelike TCG
 
-A playable Unity (C#) prototype focused on **gameplay systems**: turn flow, card UX (drag/drop targeting), enemy intent telegraphing, status effects, and a post-combat reward flow.
+A turn-based roguelike deck-building game developed with Unity and C#. This project is inspired by the roguelike deck-builder genre, with a focus on strategic card combat, enemy intent systems, status effects, and post-combat rewards.
 
-**Scope:** solo prototype built as a portfolio systems exercise (non-commercial).
+## About the Project
 
----
+Created by **Calon Arang / Ranbyus Varadha**, this project explores turn-based combat mechanics and card-based gameplay through an independently developed implementation.
 
-## Quick links
-- **Play (WebGL):** https://fouzis.itch.io/card-battler-unity-learning-clone-inspired-by-slay-the-spire
-- **Download (Windows build):** https://github.com/DimitrisFuzi/UnityRoguelikeCardGame/releases/download/v0.1.0-learning-clone/CardBattler_LearningClone_v0.1.0_Windows.zip
-- **Technical breakdown:** [Docs/TECH_BREAKDOWN.md](Docs/TECH_BREAKDOWN.md)
+The project is intended as a gameplay programming and game development portfolio project.
 
----
+## Features
 
-## Systems implemented
-- Turn-based combat loop with input gating (`TurnManager`, `BattleManager`, `HandManager`)
-- Card interaction: hover + drag/drop + target validation (`CardMovement`)
-- Data-driven cards via ScriptableObjects (`Card`) with polymorphic effect lists (`EffectData`)
-- Enemy AI behaviors via an interface (`IEnemyAI`) and intent previews (`EnemyIntent` → `EnemyDisplay`)
-- Reward selection scene (card choices + deck add) (`RewardSceneController`, `RewardCardView`)
+- Turn-based combat system
+- Card drag-and-drop interactions and targeting
+- Enemy intent telegraphing
+- Status effects and card effects
+- Combat reward system
+- ScriptableObject-based card data
+- Battle and reward scene flow
 
----
+## Inspiration
 
-## 📸 Screenshots
+Inspired by the roguelike deck-building genre and games such as *Slay the Spire*. The project is developed as an independent implementation for learning and portfolio purposes.
 
-### Combat
-![Combat Screenshot](Docs/screenshots/BattleScreenshot.png)
+## Credits
 
-### Reward Screen
-![Reward Screenshot](Docs/screenshots/RewardScreenshot.png)
+- **Game development:** Calon Arang / Ranbyus Varadha
+- **Inspiration:** Roguelike deck-building games
+- **Third-party assets:** Credited to their respective creators and licenses
 
-### Gameplay GIF
-![Gameplay GIF](Docs/screenshots/gameplay_loop.gif)
+## Copyright
 
----
+Copyright © 2026 Calon Arang / Ranbyus Varadha.
 
-## ▶️ How to Play
-- Hover a card to preview it
-- Left-click & drag to play
-- Click **End Turn** to finish your turn
-
----
-
-## Run locally (Unity Editor)
-- Unity version: **Unity 6** (Editor version used during development: `6000.2.0b7`)
-- Open scenes:
-  - `Assets/Scenes/BattleBoss1` (boss fight / intent variety)
-  - `Assets/Scenes/Battle1` (battle that leads to reward scene)
-
-> Note: card targeting is intended for fullscreen play. In windowed mode, targeting may behave unexpectedly.
-
----
-
-## 🛠️ Tech Stack
-- Unity 6 (C#)
-- DOTween (UI animation)
-- TextMeshPro
-- GitHub
-
----
-
-## ⚠️ Disclaimer
-This is a **non-commercial** gameplay prototype. The combat structure is inspired by modern roguelike deckbuilders (e.g., *Slay the Spire*).  
-All third‑party art/audio is used under its respective license and for educational/portfolio purposes.
-
----
-
-## 👤 Credits
-- Developed by **Dimitris Foutzitzakis**
-- Gameplay systems & UI: self-developed
-- Music & SFX: royalty-free assets (opengameart.org, pixabay.com, soundimage.org)
+This copyright notice applies to my original contributions and does not claim ownership of third-party assets or other materials used in the project.
